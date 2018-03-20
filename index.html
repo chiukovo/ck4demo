@@ -214,7 +214,7 @@
         </div>
 
         <div class="content mt-3">
-            <textarea id="editor1">
+            <textarea id="editor">
                 &lt;h2 style="text-align: center;"&gt;The Flavorful Tuscany Meetup&lt;/h2&gt;
                 &lt;p style="text-align: center;"&gt;&lt;span style="color: #007ac9;"&gt;&lt;strong&gt;Welcome letter&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
                 &lt;p&gt;Dear Guest,&lt;/p&gt;
@@ -255,8 +255,9 @@
         </div> <!-- .content -->
     </div><!-- /#right-panel -->
     <script>
-        CKEDITOR.replace( 'editor1', {
+        CKEDITOR.replace( 'editor', {
             extraPlugins: 'easyimage',
+            removePlugins: 'image',
             // Enabling extra plugins, available in the full-all preset: http://ckeditor.com/presets-all
 
             /*********************** File management support ***********************/
